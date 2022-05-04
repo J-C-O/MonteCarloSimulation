@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MonteCarloSimulation.ViewModels.DataChart">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgAAAAQACAAAAAAIAAAAAAAgAAAAACAAQAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\DataChart.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonteCarloSimulation.Model.Handler">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAIAAACAAgAAAAIAAAAgCKAQAAgAAIAAIAA=</HashCode>
+      <FileName>Model\Handler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
