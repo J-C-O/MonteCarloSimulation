@@ -185,12 +185,13 @@ namespace MonteCarloSimulation
 
             if (File.Exists(csvPathBox.Text))
             {
-                values = File.ReadAllLines(csvPathBox.Text)
-                             .Skip(1)
-                             .Select(v => WeatherData.FromCsv(v))
-                             .ToList();
+                //values = File.ReadAllLines(csvPathBox.Text)
+                //             .Skip(1)
+                //             .Select(v => WeatherData.FromCsv(v))
+                //             .ToList();
                 resultLabel.Content = "Success: CSV Data read";
                 resultLabel.Background = Brushes.Green;
+                Handler.SetSeasonContext(csvPathBox.Text);
             }
             else
             {
@@ -198,10 +199,7 @@ namespace MonteCarloSimulation
                 resultLabel.Background = Brushes.Yellow;
             }
 
-            foreach (WeatherData weatherData in values)
-            {
-                Pool.Seasons.Add(new MonteCarlo(weatherData.Deviation, weatherData.ExpectedTemp, weatherData.Variance, weatherData.ExpectedTemp * weatherData.Days));
-            }
+            
         }
     }
 }

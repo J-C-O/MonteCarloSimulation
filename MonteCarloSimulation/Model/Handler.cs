@@ -88,6 +88,8 @@ namespace MonteCarloSimulation.Model
                              .Select(v => WeatherData.FromCsv(v))
                              .ToList();
 
+            // clear season data
+            Pool.Seasons.Clear();
             foreach (WeatherData weatherData in values)
             {
                 Pool.Seasons.Add(new MonteCarlo(weatherData.Deviation, weatherData.ExpectedTemp, weatherData.Variance, weatherData.ExpectedTemp * weatherData.Days));

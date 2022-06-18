@@ -66,7 +66,7 @@
         </GroupBox>
         <TextBlock x:Name="ResultsBlock" HorizontalAlignment="Left" Margin="211,126,0,0" TextWrapping="Wrap" Text="{Binding Path=ResultString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DataContext="{DynamicResource DataChart}" VerticalAlignment="Top" Height="212" Width="304" Grid.Column="1"/>
 
-        <TextBox x:Name="csvPathBox" HorizontalAlignment="Left" Height="23" Margin="43,45,0,0" TextWrapping="Wrap" Text="C:\Users\Julius\source\repos\MonteCarloSimulation\MonteCarloSimulation\Data\weather.csv" VerticalAlignment="Top" Width="710" Grid.Column="1"/>
+        <TextBox x:Name="csvPathBox" HorizontalAlignment="Left" Height="23" Margin="43,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="710" Grid.Column="1"/>
         <Button x:Name="buttonLoadCsvPath" Content="Load" HorizontalAlignment="Left" Margin="758,48,0,0" VerticalAlignment="Top" Width="75" Click="buttonLoadCsvPath_Click" Height="20" Grid.Column="1"/>
         <Button x:Name="GetMonthlyReport" Content="Start Simualtion" HorizontalAlignment="Left" Margin="211,343,0,0" VerticalAlignment="Top" Width="114" Command="{Binding AddSeriesCommand}" DataContext="{DynamicResource DataChart}" Height="20" RenderTransformOrigin="0.531,-1.525" Grid.Column="1" />
         <!--Click="GetMonthlyReport_Click"/>-->
