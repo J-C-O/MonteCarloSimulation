@@ -185,10 +185,6 @@ namespace MonteCarloSimulation
 
             if (File.Exists(csvPathBox.Text))
             {
-                //values = File.ReadAllLines(csvPathBox.Text)
-                //             .Skip(1)
-                //             .Select(v => WeatherData.FromCsv(v))
-                //             .ToList();
                 resultLabel.Content = "Success: CSV Data read";
                 resultLabel.Background = Brushes.Green;
                 Handler.SetSeasonContext(csvPathBox.Text);
